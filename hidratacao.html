@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidratação</title>
+</head>
+<body>
+    <h2>Registros de hidratação</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Usuário</th>
+        <th>Quantidade (ml)</th>
+        <th>Data</th>
+    </tr>
+
+    {% for h in registros %}
+    <tr>
+        <td>{{ h[0] }}</td>
+        <td>{{ h[1] }}</td>
+        <td>{{ h[2] }}</td>
+        <td>{{ h[3] }}</td>
+    </tr>
+    {% end %}
+</table>
+
+</body>
+</html>
